@@ -1,0 +1,774 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Grupo 03">
+      
+      
+        <link rel="canonical" href="https://Requisitos-de-Software.github.io/2022.1-Faculdade-de-Arquitetura-e-Urbanismo/analise-de-requisitos/Perfil-de-usuario/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Perfil de Usuário - Faculdade de Arquitetura e Urbanismo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#757575">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7Csans-serif:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"sans-serif"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="grey" data-md-color-accent="light-grey">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#perfil-de-usuarios" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Faculdade de Arquitetura e Urbanismo" class="md-header__button md-logo" aria-label="Faculdade de Arquitetura e Urbanismo" data-md-component="logo">
+      
+  <img src="../../assets/logo_faunb.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Faculdade de Arquitetura e Urbanismo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Perfil de Usuário
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2022.1-Faculdade-de-Arquitetura-e-Urbanismo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2022.1-Faculdade-de-Arquitetura-e-Urbanismo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Faculdade de Arquitetura e Urbanismo" class="md-nav__button md-logo" aria-label="Faculdade de Arquitetura e Urbanismo" data-md-component="logo">
+      
+  <img src="../../assets/logo_faunb.png" alt="logo">
+
+    </a>
+    Faculdade de Arquitetura e Urbanismo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2022.1-Faculdade-de-Arquitetura-e-Urbanismo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2022.1-Faculdade-de-Arquitetura-e-Urbanismo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Planejamento
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Planejamento" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Planejamento
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma-de-atividades/" class="md-nav__link">
+        Cronograma de atividades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Análise dos sites
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Análise dos sites" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Análise dos sites
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/analiseSites/escolha-do-site/" class="md-nav__link">
+        Sites avaliados
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/analiseSites/site-escolhido/" class="md-nav__link">
+        Site escolhido
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/metodologia-e-processos/" class="md-nav__link">
+        Metodologia e processos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/processo-de-design/" class="md-nav__link">
+        Processo de design
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Análise de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Análise de Requisitos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Análise de Requisitos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Perfil de Usuário
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Perfil de Usuário
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de Versões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-metodologia" class="md-nav__link">
+    2. Metodologia
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-resultado" class="md-nav__link">
+    3. Resultado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-referencias" class="md-nav__link">
+    4. Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personas/" class="md-nav__link">
+        Personas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aspectos-eticos/" class="md-nav__link">
+        Aspectos éticos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise-de-tarefas/" class="md-nav__link">
+        Análise de tarefas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../principios-gerais/" class="md-nav__link">
+        Princípios Gerais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metas-de-usabilidade/" class="md-nav__link">
+        Metas de Usabilidade
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guia-de-estilo/" class="md-nav__link">
+        Guia de Estilo
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/" class="md-nav__link">
+        Apresentações
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de Versões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-metodologia" class="md-nav__link">
+    2. Metodologia
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-resultado" class="md-nav__link">
+    3. Resultado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-referencias" class="md-nav__link">
+    4. Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/Requisitos-de-Software/2022.1-Faculdade-de-Arquitetura-e-Urbanismo/edit/master/docs/analise-de-requisitos/Perfil-de-usuario.md" title="Editar esta página" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="perfil-de-usuarios">Perfil de Usuários</h1>
+<h3 id="historico-de-versoes">Histórico de Versões</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Data</strong></th>
+<th><strong>Versão</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es/as)</strong></th>
+<th><strong>Revisor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20/07/2022</td>
+<td>0.1</td>
+<td>Versão Inicial</td>
+<td>Laura Pinos</td>
+<td>Matheus Costa</td>
+</tr>
+<tr>
+<td>29/07/2022</td>
+<td>0.2</td>
+<td>Adição e padronização de fontes e legendas nas figuras e correção de links</td>
+<td>Thalisson Alves</td>
+<td>Letícia Aires</td>
+</tr>
+<tr>
+<td>30/07/2022</td>
+<td>0.3</td>
+<td>Adição da introdução e do resultado</td>
+<td>Thalisson Alves</td>
+<td>Letícia Aires e Laura Pinos</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-introducao">1. Introdução</h2>
+<p>O <strong>Perfil de usuário</strong> visa proporcionar uma descrição detalhada das características dos usuários do sistema que está sendo projetado. É necessário identificar as características de interesse e conduzir um estudo para coletar os dados dos usuários. Para que, a partir dos dados coletados, possamos agregar os valores em grupos e faixas na qual os usuários se encaixam.</p>
+<h2 id="2-metodologia">2. Metodologia</h2>
+<p>A análise de perfil de usuário utilizado inicialmente pelo grupo foi o método de questionário, respondido por alunos da Faculdade de Arquitetura analisada em questão. O questionário foi enviado para os participantes pelo WhatsApp, ele obteve 10 respostas e ficou disponível a partir do dia 18/07/2022 até 20/07/2022.</p>
+<h2 id="3-resultado">3. Resultado</h2>
+<p>O gráfico presente na <strong>Figura 1</strong> mostra que todos os participantes concordaram o Termo de consentimento.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180108714-9b2a5a32-0d49-4149-9060-a8ddbd1eb7bb.png" /></p>
+<h6 align = "center">Figura 1: Gráfico de respostas para "termo de consentimento".
+<br>Fonte: Autores</h6>
+
+<p>As respostas referentes a primeira pergunta (<strong>Qual sua faixa etária?</strong>) estão representadas na <strong>Figura 2</strong>. Ao analisarmos suas respostas podemos notar que nenhum dos participantes são menores de idade, estando todos eles entre 18 e 25 anos.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180108760-89a437ac-eb38-4c54-bea1-901c4a8fa494.png" /></p>
+<h6 align = "center">Figura 2: Gráfico de respostas para "qual sua faixa etária".
+<br>Fonte: Autores</h6>
+
+<p>As respostas referentes a segunda pergunta (<strong>Você é universitário?</strong>) estão representadas na <strong>Figura 3</strong>. As respostas desta pergunta nos mostra que 100% dos participantes são alunos de alguma universidade.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180108791-af4b323a-5c0b-4c09-baaa-f6d84dfc1986.png" /></p>
+<h6 align = "center">Figura 3: Gráfico de respostas para "você é universitário?".
+<br>Fonte: Autores</h6>
+
+<p>As respostas referentes a terceira pergunta (<strong>Você é universitário?</strong>) estão representadas na <strong>Figura 4</strong>. As respostas desta pergunta nos mostra que 100% dos participantes são alunos de alguma universidade.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180108841-d282c9df-0dd5-4758-836f-f51673c17e28.png" /></p>
+<h6 align = "center">Figura 4: Gráfico de respostas para "você usa o site oficial da sua faculdade?"
+<br>Fonte: Autores</h6>
+
+<p>As respostas referentes a quarta pergunta (<strong>Você utiliza o site oficial da sua universidade? (fau.unb.br)</strong>) estão representadas na <strong>Figura 5</strong>. Como podemos notar 33% dos participantes não costuma utilizar o site Faculdade de Arquitetura e Urbanismo da UnB, mesmo sendo alunos da mesma.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180109053-6d9e5459-e000-4a15-ac6f-e8818321bcb9.png" /></p>
+<h6 align = "center">Figura 5: Gráfico de respostas para "você usaria mais se o site fosse atualizado frequentemente?"
+<br>Fonte: Autores</h6>
+
+<p>As respostas referentes a quinta pergunta (<strong>Você usaria mais se o site fosse atualizado frequentemente?</strong>) estão representadas na <strong>Figura 6</strong>. Podemos observar que 70% dos participantes com certeza usariam mais o site e apenas 20% não o usariam caso este passasse por atualizações frequentes, o que nos mostra a importância de atualizações contínuas e frequentes neste tipo de sistema.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180109091-d82909b3-1c6c-420d-aca6-61764b61dda9.png" /></p>
+<h6 align = "center">Figura 6: Gráfico de respostas para "sente dificuldade de utilizar o site?"
+<br>Fonte: Autores</h6>
+
+<p>As respostas referentes a sexta e última pergunta (<strong>O que poderia ser adicionado para melhorar?</strong>) estão representadas na <strong>Figura 7</strong>. Conseguimos notar que 100% das respostas dizem que a interface do sistema poderia ser melhor. Podemos observar também que o site carece em informações e as informações que estão presentes muitas vezes estão desatualizadas. Baseado nessas respostas conseguimos identificar que o site precisa passar por uma mudança em sua interface, a deixando mais simples e padronizada, além disso é necessário adicionar informações no sistema e mantê-las atualizadas para assim diminuir a frequência que os alunos precisam ir à secretaria para tirar dúvidas referente a informações que estão presentes no site.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/62102447/180109183-c1dcddee-804e-443e-9c65-31c90f70041e.png" /></p>
+<h6 align = "center">Figura 7: Respostas para "o que poderia ser adicionado para melhorar?"
+<br>Fonte: Autores</h6>
+
+<h2 id="4-referencias">4. Referências</h2>
+<blockquote>
+<p>BARBOSA, Simone; SILVA, Bruno. <strong>Interação Humano-Computador</strong>. 1ª Edição. Elsevier, 2010.</p>
+</blockquote>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+      
+        
+        <a href="../../planejamento/processo-de-design/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Processo de design" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Processo de design
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../personas/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Personas" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Personas
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version.title": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

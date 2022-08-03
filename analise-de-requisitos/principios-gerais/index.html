@@ -1,0 +1,860 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Grupo 03">
+      
+      
+        <link rel="canonical" href="https://Requisitos-de-Software.github.io/2022.1-Faculdade-de-Arquitetura-e-Urbanismo/analise-de-requisitos/principios-gerais/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Princípios Gerais - Faculdade de Arquitetura e Urbanismo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#757575">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7Csans-serif:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"sans-serif"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="grey" data-md-color-accent="light-grey">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#principios-gerais-do-projeto" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Faculdade de Arquitetura e Urbanismo" class="md-header__button md-logo" aria-label="Faculdade de Arquitetura e Urbanismo" data-md-component="logo">
+      
+  <img src="../../assets/logo_faunb.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Faculdade de Arquitetura e Urbanismo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Princípios Gerais
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2022.1-Faculdade-de-Arquitetura-e-Urbanismo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2022.1-Faculdade-de-Arquitetura-e-Urbanismo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Faculdade de Arquitetura e Urbanismo" class="md-nav__button md-logo" aria-label="Faculdade de Arquitetura e Urbanismo" data-md-component="logo">
+      
+  <img src="../../assets/logo_faunb.png" alt="logo">
+
+    </a>
+    Faculdade de Arquitetura e Urbanismo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2022.1-Faculdade-de-Arquitetura-e-Urbanismo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2022.1-Faculdade-de-Arquitetura-e-Urbanismo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Planejamento
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Planejamento" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Planejamento
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma-de-atividades/" class="md-nav__link">
+        Cronograma de atividades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Análise dos sites
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Análise dos sites" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Análise dos sites
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/analiseSites/escolha-do-site/" class="md-nav__link">
+        Sites avaliados
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/analiseSites/site-escolhido/" class="md-nav__link">
+        Site escolhido
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/metodologia-e-processos/" class="md-nav__link">
+        Metodologia e processos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/processo-de-design/" class="md-nav__link">
+        Processo de design
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Análise de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Análise de Requisitos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Análise de Requisitos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perfil-de-usuario/" class="md-nav__link">
+        Perfil de Usuário
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personas/" class="md-nav__link">
+        Personas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aspectos-eticos/" class="md-nav__link">
+        Aspectos éticos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise-de-tarefas/" class="md-nav__link">
+        Análise de tarefas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Princípios Gerais
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Princípios Gerais
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de Versões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sobre-principios-gerais-e-diretrizes" class="md-nav__link">
+    2. Sobre Princípios gerais e diretrizes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-analise-dos-principios-gerais-e-diretrizes-para-o-projeto" class="md-nav__link">
+    3. Análise dos princípios gerais e diretrizes para o projeto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conclusao" class="md-nav__link">
+    4. Conclusão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-referencias" class="md-nav__link">
+    5. Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metas-de-usabilidade/" class="md-nav__link">
+        Metas de Usabilidade
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guia-de-estilo/" class="md-nav__link">
+        Guia de Estilo
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacoes/" class="md-nav__link">
+        Apresentações
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de Versões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sobre-principios-gerais-e-diretrizes" class="md-nav__link">
+    2. Sobre Princípios gerais e diretrizes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-analise-dos-principios-gerais-e-diretrizes-para-o-projeto" class="md-nav__link">
+    3. Análise dos princípios gerais e diretrizes para o projeto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conclusao" class="md-nav__link">
+    4. Conclusão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-referencias" class="md-nav__link">
+    5. Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/Requisitos-de-Software/2022.1-Faculdade-de-Arquitetura-e-Urbanismo/edit/master/docs/analise-de-requisitos/principios-gerais.md" title="Editar esta página" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="principios-gerais-do-projeto">Princípios Gerais do Projeto</h1>
+<h3 id="historico-de-versoes">Histórico de Versões</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Data</strong></th>
+<th><strong>Versão</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es/as)</strong></th>
+<th><strong>Revisor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30/07/2022</td>
+<td>0.1</td>
+<td>Criação do documento</td>
+<td>Matheus Costa</td>
+<td>Caio César</td>
+</tr>
+<tr>
+<td>30/07/2022</td>
+<td>0.2</td>
+<td>Adição dos tópicos Introdução e Princípios gerais</td>
+<td>Matheus Costa</td>
+<td>Caio César</td>
+</tr>
+<tr>
+<td>31/07/2022</td>
+<td>0.2.1</td>
+<td>Descrição dos tópicos das diretrizes</td>
+<td>Matheus Costa</td>
+<td>Caio César</td>
+</tr>
+<tr>
+<td>01/08/2022</td>
+<td>0.3</td>
+<td>Adição dos tópicos Análise dos princípios gerais e diretrizes para o projeto e Conclusão</td>
+<td>Caio César</td>
+<td>Matheus Costa</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-introducao">1. Introdução</h2>
+<p>Ainda dentro da fase de <a href="../../planejamento/processo-de-design/">análise de requisitos</a> prevista dentro do Ciclo de Vida de Mayhew, existe a etapa dos Princípios Gerais de Projeto.</p>
+<p>Barbosa e Silva (2010, p. 264) citam Mayhew, quando dizem que "princípios costumam representar objetivos gerais e de alto nível; diretrizes, regras gerais comumente observadas na prática; e padrões, soluções específicas a certos contextos bem delimitados, envolvendo certos usuários desempenhando determinadas tarefas.". Os autores ainda explicam que alguns conjuntos de diretrizes visam motivar designers a seguir uma certa padronização para assegurar aparência e comportamento (<em>look and feel</em>) semelhantes
+com o que os desenvolvedores ou alguma outra organização propuseram, mas que apesar disso, essas diretrizes frequentemente são recomendações genéricas e descontextualizadas da teoria ou base empírica que lhes deram origem.</p>
+<h2 id="2-sobre-principios-gerais-e-diretrizes">2. Sobre Princípios gerais e diretrizes</h2>
+<p>Diante do exposto anteriormente, Barbosa e Silva (2010, p. 265-278) afirmam que os princípios e diretrizes comumente utilizados no processo de design da interação e da interface giram em torno de alguns tópicos. São eles:</p>
+<ul>
+<li>
+<p><strong>Correspondência com as expectativas dos usuários</strong>: de acordo com Barbosa e Silva (2010), devemos nos certificar de que <strong>o usuário consegue determinar</strong> os relacionamentos entre: intenções e ações possíveis; entre ações e seus efeitos no sistema; entre o estado real do sistema e o que é percebido pela visão, audição ou tato; entre o estado percebido do sistema e as necessidades, intenções e expectativas do usuário;</p>
+</li>
+<li>
+<p><strong>Simplicidade nas estruturas das tarefas</strong>: segundo Barbosa e Silva (2010, p. 267), é Norman quem recomenda simplificar a estrutura das tarefa, reduzindo a quantidade de planejamento e resolução de problemas que elas requerem. Possíveis <strong>tarefas desnecessariamente complexas podem ser reestruturadas</strong>, e aqui são apresentadas quatro abordagens tecnológicas para simplificar essas estruturas:</p>
+<ul>
+<li>a) manter a tarefa a mesma, mas fornecendo diversas formas de apoio para que os usuários consigam aprender e realizar a tarefa;</li>
+<li>b) usar tecnologia para tornar visível o que seria invisível, melhorando o feedback e a capacidade de o usuário se manter no controle da tarefa; </li>
+<li>c) automatizar a tarefa ou parte dela, mantendo-a igual; </li>
+<li>d) modificar a natureza da tarefa.</li>
+</ul>
+</li>
+<li>
+<p><strong>Equilíbrio entre controle e liberdade do usuário</strong>: aqui é ressaltada a importância de manter o usuário no controle. A sensação de o usuário estar "no comando" o faz aprender mais rápido, mas é necessário buscar um <strong>equilíbrio entre o controle sem restrições do usuário e uma interface limitante</strong>. "O caminho mais rápido ou preferencial pode ser o de “menor resistência”, mas usuários que queiram explorar diferentes alternativas e cenários devem conseguir fazê-lo." (BARBOSA; SILVA; 2010, p. 267, apud TOGNAZZINI, 2003);</p>
+</li>
+<li>
+<p><strong>Consistência e padronização</strong>: para facilitar o aprendizado e uso de um sistema, Norman (1988) recomenda <strong>assegurar a consistência da interface</strong> com o modelo conceitual embutido no sistema. Os usuários não devem ter de se perguntar se palavras, situações ou ações diferentes significam a mesma coisa, como por exemplo: utilizar rótulos "<em>Salvar</em>" e "<em>Gravar</em>" indiscriminadamente em um mesmo sistema pode confundir o usuário;</p>
+</li>
+<li>
+<p><strong>Promoção da eficiência do usuário</strong>: visto que pessoas são mais custosas do que máquinas, e uma economia de tempo e esforço do usuário costumam trazer mais benefícios do que economias semelhantes de processamento ou armazenamento, este tópico considera que em primeiro lugar vem a eficiência do usuário, e não a do computador. Barbosa e Silva (2010) trazem diversas indicações de outros autores, as quais, em conjunto, constroem basicamente uma ideia de que <strong>o sistema deve possuir uma certa inteligência</strong> e apresentar algumas funcionalidades, como: proporcionar ao usuário a oportunidade de continuar trabalhando com outras partes do sistema, enquanto um processamento pode ocorrer em <em>backgorund</em>, evitando perda de produtividade e desperdício de dinheiro por parte do usuário; se manter informado sobre o usuário, sendo capaz de saber se é a primeira vez que o usuário acessou o sistema, onde ele estava quando deixou o sistema na última sessão, etc.; promover a eficiência de usuários frequentes fornecendo atalhos e aceleradores, facilitando o uso, como por exemplo com teclas de atalho; entre outras.</p>
+</li>
+<li>
+<p><strong>Antecipação das necessidades do usuário</strong>: as aplicações devem tentar prever o que o usuário quer e precisa, em vez de esperar que os usuários busquem ou coletem informações ou invoquem ferramentas. <strong>O software deve tomar iniciativa</strong> e fornecer informações adicionais úteis, em vez de apenas responder precisamente a pergunta que o usuário tiver feito. (BARBOSA; SILVA; 2010, p. 273, apud COOPER, 1999);</p>
+</li>
+<li>
+<p><strong>Visibilidade e reconhecimento</strong>: antes de executar uma ação, é necessário <strong>tornar visível para os usuários o que é possível realizar</strong> e como as ações devem ser feitas. Para isso, a interface deve oferecer ações que correspondam a intenções do usuário.;</p>
+</li>
+<li>
+<p><strong>Conteúdo relevante e expressão adequada</strong>: é destacado pelos autores Reevs e Nass (1996) que uma interação polida segue <strong>quatro máximas: qualidade, quantidade, relação (ou relevância) e modo (ou clareza)</strong>. A máxima da <em>qualidade</em> afirma que não devemos dizer nada que saibamos não ser verdade ou para o que não tenhamos evidências, ou seja, não devemos mentir ou especular. A máxima da <em>quantidade</em> diz respeito à quantidade de informação comunicada: a contribuição de uma fala deve ser tão informativa quanto necessário para os objetivos da conversa, e não mais. A máxima da quantidade está fortemente relacionada à simplicidade da interface. A máxima da <em>relação</em> ou relevância afirma que tudo o que for dito deve ter relação clara com os tópicos da conversa até o momento e ser relevante ao objetivo dos interlocutores. Por fim, a máxima de <em>modo ou clareza</em> pede para evitar a prolixidade e ambiguidade, buscar a concisão e ordenar adequadamente a conversa; (BARBOSA; SILVA; 2010)</p>
+</li>
+<li>
+<p><strong>Projeto para erros</strong>: os autores destacam que Norman recomenda projetar para o erro, ou seja, <strong>assumir que qualquer erro potencial será cometido</strong>. Dessa forma, o designer deve ajudar o usuário a se recuperar de um erro, informando-lhe sobre o que ocorreu, as consequências disso e como reverter os resultados indesejados.</p>
+</li>
+</ul>
+<h2 id="3-analise-dos-principios-gerais-e-diretrizes-para-o-projeto">3. Análise dos princípios gerais e diretrizes para o projeto</h2>
+<p>A seguir, na Tabela 1 abaixo, é possível observar alguns pontos levantados pela equipe, que visam fazer uma breve análise do site avaliado, em conformidade com as diretrizes apresentadas no tópico anterior.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Princípios</strong></th>
+<th><strong>Viola alguma Diretriz?</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Correspondência com as expectativa dos usuários</td>
+<td>Sim</td>
+<td>O site avaliado apresenta um padrão que não é constantemente seguido. Textos clicáveis, por exemplo, apresentam as mesmas características de textos não clicáveis, deixando a impressão que a funcionalidade não se mantém em ordem no sistema.</td>
+</tr>
+<tr>
+<td>Simplicidade nas Estruturas das Tarefas</td>
+<td>Sim</td>
+<td>Seguindo o menu inicial do site, temos variadas opções como graduação e pós, mas ao ir clicando, percebemos que na maioria o site mostra para o usuário um padrão levando para uma estética de site parecida, mas ao clicar em pesquisa, é levado para um caminho distinto de tudo que havia sido mostrado anteriormente.</td>
+</tr>
+<tr>
+<td>Equilíbrio entre controle e liberdade do usuário</td>
+<td>Sim</td>
+<td>O site apresenta caminhos engessados, dando a sensação que existem caminhos únicos para tarefas simples, deixando o usuário com objetivos específicos confuso em como alcançá-los.</td>
+</tr>
+<tr>
+<td>Consistência e Padronização</td>
+<td>Sim</td>
+<td>O site não apresenta uma consistência em suas funcionalidades tão abrangentes ao longo do sistema, com botões variando, estéticas distintas, entre outras funções como a citadas anteriormente no primeiro tópico.</td>
+</tr>
+<tr>
+<td>Promoção da eficiência do Usuário</td>
+<td>Sim</td>
+<td>O site não apresentou funcionalidades visando a eficiência do usuário, suas funções parecem dependentes e contraintuitivas.</td>
+</tr>
+<tr>
+<td>Antecipação das necessidades do usuário</td>
+<td>Sim</td>
+<td>O site avaliado consegue antecipar algumas necessidades do usuário, mas ele apresenta essas antecipações de forma que o usuário é bombardeado de informações em simultâneo, podendo até aparecer o que se esperava na tela, mas no meio de tantas informações, acaba por passar despercebido.</td>
+</tr>
+<tr>
+<td>Visibilidade e Reconhecimento</td>
+<td>Sim</td>
+<td>Em algumas partes do site a Visibilidade e Reconhecimento é notável, mas em alguns detalhes não, como textos clicáveis que só são perceptíveis por conta do cursor demonstrar isso por meio de animações do próprio sistema operacional.</td>
+</tr>
+<tr>
+<td>Conteúdo Relevante e Expressão Adequada</td>
+<td>Sim</td>
+<td>O sistema oferece muita informação para o usuário simultaneamente, exagerando na quantidade, podendo ser mais simples e resumir informações em caminhos ou funcionalidades diferentes.</td>
+</tr>
+<tr>
+<td>Projeto para Erros</td>
+<td>Sim</td>
+<td>No site avaliado, quando se digita algo na barra de pesquisa, mas muda de categoria por engano, o que estava sendo buscado não é recuperado, como acontece em sites mais comuns.</td>
+</tr>
+</tbody>
+</table>
+<h6 align = "center">Tabela 1: Análise dos princípios e diretrizes para o projeto.
+<br>Fonte: Autores</h6>
+
+<h2 id="4-conclusao">4. Conclusão</h2>
+<p>Ao examinar a análise de forma mais robusta sobre os princípios e diretrizes do projeto, é notório que as violações são abundantes, podendo assim atingir negativamente a experiência dos usuários que utilizam o sistema.</p>
+<h2 id="5-referencias">5. Referências</h2>
+<blockquote>
+<p>BARBOSA, Simone; SILVA, Bruno. <strong>Interação Humano-Computador</strong>. 1ª Edição. Elsevier, 2010.</p>
+</blockquote>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+      
+        
+        <a href="../analise-de-tarefas/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Análise de tarefas" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Análise de tarefas
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../metas-de-usabilidade/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Metas de Usabilidade" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Metas de Usabilidade
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version.title": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
